@@ -22,6 +22,7 @@
 .col-6 {
     width: 60%;
     height: 100%;
+    border-left: 2px solid #B1B1B1;
     background-color: aqua;
 }
 
@@ -29,4 +30,38 @@
     width: 40%;
     height: 100%;
     background-color: blueviolet;
+}
+
+.profile_bar {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #EAEAEA;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 0 15px 0 15px;
+}
+
+.col img {
+    width: 100%;
+}
+
+ul li {
+    list-style: none;
+}
+
+.profile_icons {
+    display: flex;
+    gap: 15px;
+}
+
+.fa-circle-notch, .fa-message, .fa-ellipsis-vertical, .fa-paperclip, .fa-magnifying-glass {
+    font-size: 20px;
+    color: #B1B1B1;
 }
