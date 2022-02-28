@@ -65,3 +65,55 @@ ul li {
     font-size: 20px;
     color: #B1B1B1;
 }
+
+.notification_bar {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #8EDAFC;
+}
+
+.notification_icon {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 9999px;
+}
+
+.fa-bell-slash {
+    font-size: 25px;
+    color: #8EDAFC;
+}
+
+.notification_text p {
+    color: grey;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.search_bar {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    background-color: #EAEAEA;
+}
+
+.input_style {
+    width: 100%;
+    padding: 5px;
+    border: 0;
+}
+
+.search_icon {
+    padding: 0 15px 0 15px;
+}
+
+.search_text {
+    flex-grow: 1;
+    padding-right: 15px;
+}
