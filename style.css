@@ -4,3 +4,29 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightslategray;
+}
+
+.app_container {
+    width: 1350px;
+    height: 850px;
+    display: flex;
+}
+
+.col-6 {
+    width: 60%;
+    height: 100%;
+    background-color: aqua;
+}
+
+.col-4 {
+    width: 40%;
+    height: 100%;
+    background-color: blueviolet;
+}
