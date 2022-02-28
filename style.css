@@ -22,7 +22,7 @@
 .col-6 {
     width: 60%;
     height: 100%;
-    border-left: 2px solid #B1B1B1;
+    border-left: 1px solid #B1B1B1;
     background-color: aqua;
 }
 
@@ -30,6 +30,11 @@
     width: 40%;
     height: 100%;
     background-color: blueviolet;
+}
+
+.side_bar {
+    display: flex;
+    flex-direction: column;
 }
 
 .profile_bar {
@@ -107,6 +112,7 @@ ul li {
     width: 100%;
     padding: 5px;
     border: 0;
+    border-radius: 5px;
 }
 
 .search_icon {
@@ -116,4 +122,23 @@ ul li {
 .search_text {
     flex-grow: 1;
     padding-right: 15px;
+}
+
+.contact_list {
+    width: 100%;
+    flex-grow: 1;
+    background-color: white;
+}
+
+.contact_item {
+    display: flex;
+    padding: 15px;
+    gap: 15px;
+    align-items: center;
+}
+
+.contact_info p {
+    font-size: 14px;
+    margin-top: 5px;
+    color: grey;
 }
