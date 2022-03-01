@@ -85,6 +85,14 @@ const app = new Vue({
             
         ]
         
+    },
+    methods: {
+
+        changeChat: function(chatIndex) {
+
+            this.currentChat = chatIndex;
+
+        },
     }
 
 
