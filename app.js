@@ -11,7 +11,7 @@ const app = new Vue({
                 messages: [
                     {
                         date: "10/01/2020 15:30:55",
-                        text: "Stasera facciamo il raid, vieni con il warlock",
+                        text: "Stasera facciamo il raid, alle 21 si pulla",
                         status: "received",
                     },
                     {
@@ -28,7 +28,7 @@ const app = new Vue({
                 messages: [
                     {
                         date: "15/03/2020 18:50:55",
-                        text: "Hai visto il nuovo le nuove puntate di AoT?",
+                        text: "Hai visto le nuove puntate di AoT?",
                         status: "sent",
                     },
                     {

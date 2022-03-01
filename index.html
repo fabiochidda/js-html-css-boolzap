@@ -61,7 +61,7 @@
                             </div>
                             <div class="contact_info">
                                 <h3>{{elements.name}}</h3>
-                                <p></p>
+                                <p>{{elements.messages[0].text}}</p>
                             </div>
                         </li>
                     </ul>
@@ -76,7 +76,7 @@
                             </figure>
                             <div class="profile_info">
                                 <h3>{{elements.name}}</h3>
-                                <p>Ultimo accesso: ieri</p>
+                                <p>Ultimo accesso: {{elements.messages[0].date}}</p>
                             </div>
                         </div>
                         <div class="col">
@@ -90,7 +90,7 @@
 
                     <div class="chat_container">
                         <ul class="chat_box" v-for="(item, i) in contacts" v-bind:class="i === currentChat ? 'active_message' : 'not_active' ">
-                            <li v-bind:class="" v-for="(elements, i) in item.messages" >
+                            <li v-bind:class="item.messages[i].status == 'sent' ? 'my_message' : 'contact_message'" v-for="(elements, i) in item.messages">
                                 <div class="chat_text">
                                     <p>{{elements.text}}</p>
                                 </div>
