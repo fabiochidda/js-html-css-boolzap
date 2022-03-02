@@ -102,9 +102,15 @@ const app = new Vue({
                
                 this.contacts[this.currentChat].messages.push({text: this.newMessage, status: "sent"})
 
+                setTimeout(() => {
+
+                    this.contacts[this.currentChat].messages.push({text: "Ok champ", status: "received"})
+    
+                }, 2000)
+
             }
 
-            this.newMessage = ""
+            this.newMessage = ""            
             
         },
     }
