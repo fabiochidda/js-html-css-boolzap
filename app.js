@@ -3,6 +3,7 @@ const app = new Vue({
     el: "#app",
     data: {
         currentChat: 0,
+        newMessage: '',
         contacts: [
             {
                 name: "Franco",
@@ -92,6 +93,19 @@ const app = new Vue({
 
             this.currentChat = chatIndex;
 
+        },
+
+        addNewMessage: function() {
+
+            if (this.newMessage !== "") {
+
+               
+                this.contacts[this.currentChat].messages.push({text: this.newMessage, status: "sent"})
+
+            }
+
+            this.newMessage = ""
+            
         },
     }
 

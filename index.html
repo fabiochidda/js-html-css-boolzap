@@ -61,7 +61,7 @@
                             </div>
                             <div class="contact_info">
                                 <h3>{{elements.name}}</h3>
-                                <p>{{elements.messages[0].text}}</p>
+                                <p>{{elements.messages[elements.messages.length-1].text}}</p>
                             </div>
                         </li>
                     </ul>
@@ -76,7 +76,7 @@
                             </figure>
                             <div class="profile_info">
                                 <h3>{{elements.name}}</h3>
-                                <p>Ultimo accesso: {{elements.messages[0].date}}</p>
+                                <p>Ultimo accesso: {{elements.messages[elements.messages.length-1].date}}</p>
                             </div>
                         </div>
                         <div class="col">
@@ -107,7 +107,7 @@
                                 <i class="fa-solid fa-face-smile"></i>
                             </li>
                             <li>
-                                <input class="message_input_style" type="text" placeholder="Scrivi un messaggio">
+                                <input class="message_input_style" type="text" placeholder="Scrivi un messaggio" v-model="newMessage" @keyup.enter="addNewMessage">
                             </li>
                             <li>
                                 <i class="fa-solid fa-microphone"></i>
