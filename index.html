@@ -50,12 +50,12 @@
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </div>
                         <div class="search_text">
-                            <input class="input_style" type="text" placeholder="Cerca o inizia una nuova chat">
+                            <input class="input_style" type="text" v-model="searchName" placeholder="Cerca o inizia una nuova chat">
                         </div>
                     </div>
 
                     <ul class="contact_list">
-                        <li @click="changeChat(i)" class="contact_item" v-for="(elements, i) in contacts" v-bind:class="i === currentChat ? 'active_chat' : '' ">
+                        <li @click="changeChat(i)" class="contact_item" v-for="(elements, i) in filteredContacts" v-bind:class="i === currentChat ? 'active_chat' : '' ">
                             <div class="contact_img">
                                 <img v-bind:src="elements.avatar" alt="">
                             </div>

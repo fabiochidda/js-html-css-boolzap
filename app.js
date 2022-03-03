@@ -4,6 +4,7 @@ const app = new Vue({
     data: {
         currentChat: 0,
         newMessage: '',
+        searchName: '',
         contacts: [
             {
                 name: "Franco",
@@ -113,6 +114,15 @@ const app = new Vue({
             this.newMessage = ""            
             
         },
+    },
+    computed: {
+
+        filteredContacts() {
+
+            return this.contacts.filter(elements => elements.name.includes(this.searchName))
+
+        }
+
     }
 
 
