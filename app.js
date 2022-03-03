@@ -99,12 +99,12 @@ const app = new Vue({
 
             if (this.newMessage !== "") {
 
-               
-                this.contacts[this.currentChat].messages.push({text: this.newMessage, status: "sent"})
+                const currentIndex = this.currentChat
+                this.contacts[currentIndex].messages.push({text: this.newMessage, status: "sent"})
 
                 setTimeout(() => {
 
-                    this.contacts[this.currentChat].messages.push({text: "Ok champ", status: "received"})
+                    this.contacts[currentIndex].messages.push({text: "Ok champ", status: "received"})
     
                 }, 2000)
 
