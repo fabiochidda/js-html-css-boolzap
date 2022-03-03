@@ -101,11 +101,11 @@ const app = new Vue({
             if (this.newMessage !== "") {
 
                 const currentIndex = this.currentChat
-                this.contacts[currentIndex].messages.push({text: this.newMessage, status: "sent"})
+                this.contacts[currentIndex].messages.push({date: dayjs().format('DD/MM/YYYY HH:mm:ss'), text: this.newMessage, status: "sent"})
 
                 setTimeout(() => {
 
-                    this.contacts[currentIndex].messages.push({text: "Ok champ", status: "received"})
+                    this.contacts[currentIndex].messages.push({date: dayjs().format('DD/MM/YYYY HH:mm:ss'), text: "Ok champ", status: "received"})
     
                 }, 2000)
 
